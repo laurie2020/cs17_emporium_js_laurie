@@ -5,13 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+                        <!-- style -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-
+    <div class="sign-up-parent">
+        <div class="container sign-up-container">
+            <div class="d-flex justify-content-end">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Sign UP</h3>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="Email address" class='sign-input'>
+                            <input type="password" placeholder="password" class='sign-input'>
+                            <button class="bg-info sign-button">Sign Up</button>
+                        </form>
+                        <div>
+                            <div class="socials">
+                                <button class="social-buttons bg-danger"><i class="fab fa-google"></i> Comment with Google</button>
+                                <button class="social-buttons bg-primary"><i class="fab fa-facebook-f"></i> Comment with Facebook</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="text-center">Register</h3>
+                    <form action="">
+                        <div class="container register">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" placeholder="First name" class="small-input">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Last name" class="small-input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" placeholder="Email address" id="email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="password" placeholder="Password" class="small-input">
+                                </div>
+                                <div class="col">
+                                    <input type="password" placeholder="Confirm password" class="small-input">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bg-info sign-button">Sign Up</button>
+                    </form>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- header -->
+    <header>
+        <h1>emporium.</h1>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" id="home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ELEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item" id="buttons">
+                            <button class="color-change white"></button>
+                            <button class="color-change black"></button>
+                            <button id="connexion">CONNEXION</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>                    
+    <!-- fin header -->
+    <!-- intro -->
+    <section id="intro" class="d-flex justify-content-center">
+        <div id="intro-text">
+            <h1>Shop at</h1>
+            <img src="./public/img/logo.png" alt="" id="logo">
+            <p>A wonderful serenity has taken possession of my my entire soul, like these sweet mornings of spring which I enjoy with my.</p>
+            <button class="rounded-pill">SALE ITEMS</button>
+        </div>
+        <img src="./public/img/slider-1.jpg" alt="">
+    </section>
+    <!-- fin intro -->
+    <!-- bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- js -->
+    <script src="./public/js/main.js"></script>
 </body>
 </html>
