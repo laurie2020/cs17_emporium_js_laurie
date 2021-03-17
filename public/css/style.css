@@ -6268,6 +6268,164 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
 }
 
+#products-container {
+  width: 65%;
+}
+#products-container .col {
+  width: 250px !important;
+  padding: 0;
+}
+
+.product_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 0 !important;
+  font-size: 13px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0 auto !important;
+}
+
+.product_info_text p {
+  color: #da3b3b;
+  text-align: center;
+  width: 250px;
+  font-weight: 600;
+}
+
+.product_info_text_sale {
+  text-align: center;
+  padding: 10px;
+  height: 70px;
+}
+
+.product_info_text_sale p {
+  color: #da3b3b;
+  font-weight: 600;
+}
+
+.product_info_text_sale span {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.sale {
+  text-align: center;
+  padding: 10px;
+}
+
+.sale p {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #da3b3b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p.title {
+  color: black;
+  font-weight: 600;
+}
+
+.before-after {
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.before-after::before {
+  content: "View details";
+  position: absolute;
+  height: 50px;
+  width: 50%;
+  bottom: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  transition: 1s;
+  z-index: 10;
+}
+
+.before-after::after {
+  content: "View details";
+  position: absolute;
+  height: 50px;
+  width: 50%;
+  bottom: -50px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  transition: 1s;
+}
+
+.before-after:hover:before {
+  bottom: 0;
+}
+
+.before-after:hover:after {
+  bottom: 0;
+}
+
+.before-after img {
+  transition: 1s;
+}
+
+.before-after img:hover {
+  transform: scale(1.1);
+}
+
+#discover {
+  background-image: url(../../public/img/cta-bg.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  text-align: center;
+  color: white;
+  padding: 15%;
+}
+
+#discover button {
+  background-color: #da3b3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+#discover h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#carousel {
+  display: flex;
+  overflow: hidden;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.carousel-card img {
+  width: 200px;
+}
+
+.carousel-card {
+  margin: 5px;
+  text-align: center;
+}
+
+.carousel-card .title {
+  font-size: 13px;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
