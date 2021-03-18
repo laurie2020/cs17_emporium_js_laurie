@@ -13,7 +13,7 @@
     <div class="sign-up-parent d-none">
         <div class="container sign-up-container">
             <div class="d-flex justify-content-end">
-                <i class="fas fa-times"></i>
+                <i class="fas fa-times" id="close"></i>
             </div>
             <div class="row">
                 <div class="col">
@@ -277,59 +277,142 @@
         <div id="carousel">
             <div class="carousel-card">
                 <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
-                <div class="">
+                <div class="product-info">
                     <p class="title">Luxury Sofa</p>
                     <p>$600.00</p>
                 </div>
             </div>
             <div class="carousel-card">
                 <img src="./public/img/products_mini/product-gloves.jpg" alt="">
-                <div class="">
+                <div class="product-info d-flex">
                     <div class="sale">
                         <p class="rounded-circle">SALE!</p>
                     </div>
-                    <p class="title">Leather Gloves</p>
-                    <p><span>$34.00</span> $27.00</p>
+                    <div class="product_info_text">
+                        <p class="title">Leather Gloves</p>
+                        <p><span>$34.00</span> $27.00</p>
+                    </div>
+                    
                 </div>
             </div>
             <div class="carousel-card">
                 <img src="./public/img/products_mini/product-cups.jpg" alt="">
-                <div class="">
+                <div class="product-info">
                     <p class="title">Colorful Bowl</p>
                     <p>$18.00</p>
                 </div>
             </div>
             <div class="carousel-card">
                 <img src="./public/img/products_mini/product-bag.jpg" alt="">
-                <div class="">
-                    <p class="title">Women Bag</p>
-                    <p><span>$420.00</span> $350.00</p>
+                <div class="product-info d-flex">
+                    <div class="sale">
+                        <p class="rounded-circle">SALE</p>
+                    </div>
+                    <div class="product_info_text">
+                        <p class="title">Women Bag</p>
+                        <p><span>$420.00</span> $350.00</p>
+                    </div>
+                    
                 </div>
             </div>
             <div class="carousel-card">
                 <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
-                <div class="">
+                <div class="product-info">
                     <p class="title">Minimal T-shirt</p>
                     <p>$15.00</p>
                 </div>
             </div>
             <div class="carousel-card">
                 <img src="./public/img/products_mini/product-plates.jpg" alt="">
-                <div class="">
+                <div class="product-info">
                     <p class="title">Plates Set</p>
                     <p>$30.00</p>
                 </div>
             </div>
             <div class="carousel-card">
                 <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
-                <div class="">
+                <div class="product-info">
                     <p class="title">Modern Sofa</p>
                     <p>$900.00</p>
                 </div>
             </div>
         </div>
+        <div id="indicator-parent">
+            <ul id="slider-indicators">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="ghost"></li>
+                <li class="ghost"></li>
+                <li class="ghost"></li>
+            </ul>
+        </div>
     </section>
     <!-- fin product carousel -->
+    <!-- info -->
+    <section id="info">
+        <div class="info-div" id="first-info">
+            <i class="far fa-check-circle"></i>
+            <p class="titre">TRUSTED BY 10,000+ CUSTOMERS</p>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipiscing elit. Voluptate mollitia nemo earum nisi veritatis dolore. Vitae delenti</p>
+            <button class="bg-dark text-light">LEARN MORE</button>
+        </div>
+        <div class="info-div" id="second-info">
+            <i class="fas fa-paper-plane"></i>
+            <p class="titre">VERY FAST SHIPPING</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipiscing elit. Voluptate mollitia nemo earum nisi veritatis dolore. Vitae delenti</p>
+            <button class="bg-light">LEARN MORE</button>
+        </div>
+        <div class="info-div" id="third-info">
+            <i class="far fa-check-circle"></i>
+            <p class="titre">TRUSTED BY 10,000+ CUSTOMERS</p>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipiscing elit. Voluptate mollitia nemo earum nisi veritatis dolore. Vitae delenti</p>
+            <button class="bg-dark text-light">LEARN MORE</button>
+        </div>
+    </section>
+    <!-- fin info -->
+    <!-- footer -->
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>ABOUT US</h5>
+                        <p class="small-font text-secondary">A wonderful serenity has taken possession of my entire soul, like thes sweet morgnings of spring which I enjoy with my whole heart. I am alone, and feek the charm of existence in this spot, which was created for the bliss of</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>RECENT POSTS</h5>
+                        <ul class="small-font">
+                            <li>>Hello World</li>
+                            <li>>Wonderful serenity has taken</li>
+                            <li>>In my soul and absorb its power</li>
+                            <li>>I hear the buzz of the little</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>TAG CLOUD</h5>
+                        <div>
+                            <span class="badge text-secondary border border-secondary">business</span>
+                            <span class="badge text-secondary border border-secondary">confidence</span>
+                            <span class="badge text-secondary border border-secondary">gadgets</span>
+                            <span class="badge text-secondary border border-secondary">identity</span>
+                            <span class="badge text-secondary border border-secondary">logo</span>
+                            <span class="badge text-secondary border border-secondary">photography</span>
+                            <span class="badge text-secondary border border-secondary">time</span>
+                            <span class="badge text-secondary border border-secondary">trips</span>
+                            <span class="badge text-secondary border border-secondary">works</span>
+                            <span class="badge text-secondary border border-secondary">work space</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-secondary">
+            <p>COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
+        </div>
+    </footer>
+    <!-- fin footer -->
     <!-- bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- js -->
