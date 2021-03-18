@@ -2,11 +2,15 @@
 let btnWhite = document.querySelector('.white');
 let btnBlack = document.querySelector('.black');
 let body = document.querySelector('body');
+let navbar = document.querySelector('header');
+navbar.style.backgroundColor = "white";
 btnWhite.addEventListener('click', () => {
     body.style.backgroundColor = "white";
+    navbar.style.backgroundColor = "white";
 })
 btnBlack.addEventListener('click', () => {
     body.style.backgroundColor = "black";
+    navbar.style.backgroundColor = "black";
 })
 // fin bouton noir/blanc
 // section signup
@@ -44,19 +48,21 @@ indicators.forEach((element, index) => {
 // fin carousel
 
 // navbar
-let navbar = document.querySelector('header');
+
 window.addEventListener('scroll', ()=> {
     if(window.scrollY >= 60 ){
         navbar.style.paddingTop = "0";
-        navbar.style.height = "50px";
         navbar.style.position = "fixed";
         navbar.style.width = "100%";
         navbar.style.display = "flex";
         navbar.style.backgroundColor = "white";
         navbar.style.zIndex = "20";
+        if(window.matchMedia("(max-width: 992px)")){
+            navbar.style.position = "static";
+        }
     }else {
         navbar.style.paddingTop = "50px";
-        navbar.style.height = "217px";
+        navbar.style.height = "auto";
         navbar.style.position = "static";
         navbar.style.width = "100%";
         navbar.style.display = "block";
@@ -64,3 +70,15 @@ window.addEventListener('scroll', ()=> {
     }
 })
 // fin navbar
+let register = document.querySelector("#register");
+let signUp = document.querySelector("#sign-up");
+let btnRegister = document.querySelector("#register-title");
+let btnSignUp = document.querySelector("#sign-up-title");
+btnRegister.addEventListener('click', () => {
+    register.classList.remove('d-none');
+    signUp.classList.add('d-none');
+})
+btnSignUp.addEventListener('click', () => {
+    register.classList.add('d-none');
+    signUp.classList.remove('d-none');
+})
